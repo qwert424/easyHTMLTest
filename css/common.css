@@ -1,0 +1,144 @@
+@import "./../font/iconfont.css";
+
+body {
+    font: 12px/1.5 tahoma, arial, 'Hiragino Sans GB', '\5b8b\4f53', sans-serif;
+}
+
+/* select */
+::selection {
+    background-color: #f07c82;
+    color: #fff;
+}
+
+/* hidden */
+.hd {
+    overflow: hidden;
+}
+
+/* 浮动 */
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+/* 颜色 */
+.cq {
+    color: #142334;
+}
+
+/* a */
+a {
+    color: #7a7374;
+}
+
+a:hover,
+a:active {
+    color: #fff;
+    background-color: #82111f;
+}
+
+a.none:hover{
+    color: inherit;
+    background-color: none;
+}
+
+/* margin */
+.mr10 {
+    margin-right: 10px;
+}
+
+.mt10 {
+    margin-top: 10px;
+}
+
+.mt90 {
+    margin-top: 90px;
+}
+
+.ml10 {
+    margin-left: 10px;
+}
+
+.mb10 {
+    margin-bottom: 10px;
+}
+
+.mb20 {
+    margin-bottom: 20px;
+}
+
+.mb90 {
+    margin-bottom: 90px;
+}
+
+.mb30 {
+    margin-bottom: 30px;
+}
+
+/* 容器 */
+.container {
+    width: 1100px;
+    border-radius: 10px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/* 文字排列 */
+.tc {
+    text-align: center;
+}
+
+.tl {
+    text-align: left;
+}
+
+.tr {
+    text-align: right;
+}
+
+/* 文字显示 */
+.thd1 {
+    overflow: hidden;
+    display: inline-block;
+    width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.thd2 {
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+    display: -webkit-box;
+    /*将对象作为弹性伸缩盒子模型显示*/
+
+    -webkit-line-clamp: 2;
+    /*限制在块元素文本的行数，它需要组合其他的WebKit属性*/
+
+    -webkit-box-orient: vertical;
+    /*设置盒子的子元素的排列方式*/
+}
+
+/* section样式 */
+section:nth-child(even) {
+    background-color: #f7f7f7;
+}
+
+/* 边框弧度 */
+.br4 {
+    border-radius: 4px;
+}
+
+.br10 {
+    border-radius: 10px;
+}
